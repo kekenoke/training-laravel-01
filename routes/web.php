@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('items', 'ItemController');
+Route::resource('categories', 'categoriesController');
+
+Route::get('/items/create', 'ItemController@create')->name('items.create');
+Route::post('/items/store', 'ItemController@store')->name('items.store');
+
+Route::get('/categories/create', 'categoriesController@create')->name('categories.create');
+Route::post('/categories/store', 'categoriesController@store')->name('categories.store');
+
+Route::get('post/create', 'PostController@create');
+Route::post('post', 'PostController@store');

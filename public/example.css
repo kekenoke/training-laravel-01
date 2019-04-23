@@ -1,0 +1,27 @@
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 48px;
+}
+
+.btn-square-toy {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #00BCD4;/*背景色*/
+    color:white;/*=背景色*/
+    border-bottom: solid 2px #118e9e;
+    border-radius: 4px;
+    font-weight: bold;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+    box-shadow: 5px 5px 0 0 #FACC2E;
+}
+
+.btn-square-toy:hover {
+    background-color: white;
+    color: #00BCD4;
+    content: "Available for work";
+}
+
